@@ -5,12 +5,12 @@ then that of the second function will be of the form (char c, int n).*/
 
 class DataPrint{
 
-	void data(int a, char b){
+	DataPrint(int a, char b){
 	System.out.println("Integer is: " + a + " "+ "Char is : "+b);
 	
 	}
 	
-	void data(char b, int a){
+	DataPrint(char b, int a){
 	System.out.println("Char is : " + b + " "+ "Integer is: " +a);
 
 	}
@@ -18,9 +18,9 @@ class DataPrint{
 }
 public class DataPrint1{
 	public static void main(String args[]){
-	DataPrint d = new DataPrint();
-	//d.data(10,"Java");
-	d.data("Java",20);
+	DataPrint d = new DataPrint(10,'J');
+	DataPrint d1 = new DataPrint('J',20);
+	
 
 	}
 }
